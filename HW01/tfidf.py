@@ -1,48 +1,61 @@
 import sys
 import os
+import math
+from string import punctuation
 
-class tfidf:
-    def __init__(self):
-        self.weighted = False
-        self.documents = []
-        self.corpus_dict = {}
+class Tfidf:
+	def __init__(self):
+		self.weighted = False
+		#documents contains document, and document contains two field: docName and docDict
+		self.documents = []
 
-    def addDocument(self, doc_name, list_of_words):
-        # building a dictionary
-        doc_dict = {}
-        for w in list_of_words:
-            doc_dict[w] = doc_dict.get(w, 0.) + 1.0
-            self.corpus_dict[w] = self.corpus_dict.get(w, 0.0) + 1.0
+		#corpusDict has all the items from documents
+		self.corpusDict = {}
 
-        # normalizing the dictionary
-        length = float(len(list_of_words))
-        for k in doc_dict:
-            doc_dict[k] = doc_dict[k] / length
+		#tf-idf value of each words in each doc 
+		self.tfIdf = []
 
-        # add the normalized document to the corpus
-        self.documents.append([doc_name, doc_dict])
+	# signal: positive doc or negative doc
+	def addDocument(self, signal, docName, listOfWords):
+		#building a dictionary
+		docDict = {}
+		for w in listOfWords:
 
-    def similarities(self, list_of_words):
-        """Returns a list of all the [docname, similarity_score] pairs relative to a list of words."""
+			#delete all punctuations
+			w=w.translate(None, punctuation)
+			#lowercase
+			w=w.lower()
 
-        # building the query dictionary
-        query_dict = {}
-        for w in list_of_words:
-            query_dict[w] = query_dict.get(w, 0.0) + 1.0
+			#count term frequency of a word
+			docDict[w] = docDict.get(w, 0.0) + 1.0 
 
-        # normalizing the query
-        length = float(len(list_of_words))
-        for k in query_dict:
-            query_dict[k] = query_dict[k] / length
+			if (w in self.corpusDict):
+				self.corpusDict.get[w][0] += 1 
+				#count number of a word in the doc
+				self.corpusDict.get[w][1] += 1 if (docDict[w] == 1) else 0 #count number of file that contains the word
+			else:
+				self.corpusDict[w] = (1,1)
 
-        # computing the list of similarities
-        sims = []
-        for doc in self.documents:
-            score = 0.0
-            doc_dict = doc[1]
-            for k in query_dict:
-                if doc_dict.has_key(k):
-                    score += (query_dict[k] / self.corpus_dict[k]) + (doc_dict[k] / self.corpus_dict[k])
-            sims.append([doc[0], score])
+		self.documents.append([signal, docName, docDict])
 
-        return sims
+	# count tf-idf
+	def countTfIdf(self):
+		D = len(self.documents)
+		for doc in self.documents: # traversal of all documents
+			tfIdfDict = {}
+			for w in doc[2]: #traversal of words in doc
+				tf = doc[2][w] / self.corpusDict[w][0]
+				idf = math.log10 (D / (1 + self.corpusDict[w][1]))
+				tfIdfDict[w] = tf * idf
+			self.tfIdf.append([doc[0], doc[1], tfIdfDict])
+
+	#get num of items in corpusDict
+	def getCorpusDict(self):
+		return self.corpusDict
+
+	def getDocuments(self):
+		return self.documents
+
+	def getTfIdf(self):
+		countTfIdf
+		return self.tfIdf
