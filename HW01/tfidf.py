@@ -30,22 +30,24 @@ class Tfidf:
 			docDict[w] = docDict.get(w, 0.0) + 1.0 
 
 			if (w in self.corpusDict):
-				self.corpusDict.get[w][0] += 1 
+				self.corpusDict[w][0] += 1 
 				#count number of a word in the doc
-				self.corpusDict.get[w][1] += 1 if (docDict[w] == 1) else 0 #count number of file that contains the word
+				self.corpusDict[w][1] += 1 if (docDict[w] == 1) else 0 #count number of file that contains the word
 			else:
-				self.corpusDict[w] = (1,1)
+				self.corpusDict[w] = [1,1]
 
 		self.documents.append([signal, docName, docDict])
 
 	# count tf-idf
 	def countTfIdf(self):
-		D = len(self.documents)
+		D = len(self.documents) + 0.0
 		for doc in self.documents: # traversal of all documents
 			tfIdfDict = {}
 			for w in doc[2]: #traversal of words in doc
 				tf = doc[2][w] / self.corpusDict[w][0]
-				idf = math.log10 (D / (1 + self.corpusDict[w][1]))
+				# print D
+				# print (1.0 + self.corpusDict[w][1])
+				idf = math.log10 (D / (1.0 + self.corpusDict[w][1]))
 				tfIdfDict[w] = tf * idf
 			self.tfIdf.append([doc[0], doc[1], tfIdfDict])
 
@@ -57,5 +59,5 @@ class Tfidf:
 		return self.documents
 
 	def getTfIdf(self):
-		countTfIdf
+		self.countTfIdf()
 		return self.tfIdf

@@ -11,7 +11,7 @@ negative = -1
 #import files
 path = 'data 1/s1/baseball/'
 demopath = 'demodata/'
-for root, dirs, files in os.walk(demopath):
+for root, dirs, files in os.walk(path):
 	for f in files:
 		if f == ".DS_Store" : continue
 		fileHandle = open (os.path.join(root,f))
@@ -19,4 +19,4 @@ for root, dirs, files in os.walk(demopath):
 		fileHandle.close()
 
 doclist = table.getTfIdf()
-print doclist
+print doclist[0]
