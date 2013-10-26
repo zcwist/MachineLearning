@@ -48,8 +48,11 @@ class Tfidf:
 				# print D
 				# print (1.0 + self.corpusDict[w][1])
 				idf = math.log10 (D / (1.0 + self.corpusDict[w][1]))
-				tfIdfDict[w] = tf * idf
-			self.tfIdf.append([doc[0], doc[1], tfIdfDict])
+				ti = tf * idf;
+				if (ti > 0.005):
+					tfIdfDict[self.corpusDict.keys().index(w)] = ti
+			temp = sorted(tfIdfDict.iteritems(), key=lambda d:d[0])
+			self.tfIdf.append([doc[0], doc[1], temp])
 
 	#get num of items in corpusDict
 	def getCorpusDict(self):
