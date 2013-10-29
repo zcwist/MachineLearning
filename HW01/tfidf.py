@@ -25,7 +25,6 @@ class Tfidf:
 			w=w.translate(None, punctuation)
 			#lowercase
 			w=w.lower()
-
 			#count term frequency of a word
 			docDict[w] = docDict.get(w, 0.0) + 1.0 
 
