@@ -1,10 +1,11 @@
-fileHandler = open("s1FeatureVector.txt");
+fileHandler = open("s1234FeatureVector.txt");
 vectors = []
 for lines in fileHandler.readlines():
 	signal = int(lines[0:lines.find("{")])
 	data = eval(lines[lines.find("{"):])
 	vectors.append([signal, data]);
 fileHandler.close();
+
 
 w = {}
 
@@ -22,9 +23,9 @@ w = {}
 # }
 
 alpha = 1
-initialW = 0.0
+initialW = 1.0
 
-itertimes = 20 #
+itertimes = 40 #
 count = 0
 err = 1 #amount of errors in each iterator
 while(err!=0 and count<=itertimes):
@@ -38,9 +39,9 @@ while(err!=0 and count<=itertimes):
 			err += 1
 			for feature in vector:
 				w[feature] += alpha * signal * vector[feature]
-	print w['round'] , w['playoffs'] , w['fans']
-	print err
 	count +=1
+
+print err, count
 
 #clear w
 zero = []
@@ -50,12 +51,11 @@ for key in w:
 for feature in zero:
 	del w[feature]
 
+fileHandler = open("weights.txt",'w')
+fileHandler.write(str(w))
+fileHandler.close()
 
 
-fileHandler = open("weights.txt",'w');
-fileHandler.write(str(w));
 
 
-print err
-print count
 

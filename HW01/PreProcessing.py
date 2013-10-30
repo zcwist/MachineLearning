@@ -9,11 +9,12 @@ positive = 5
 negative = -1
 
 #import files
-datano = "1234"
+datano = "1"
 path = "data 1/s%s/" %datano
 multifile = "training data/"
 demopath = 'demodata/'
-for root, dirs, files in os.walk(multifile):
+
+for root, dirs, files in os.walk(path):
 	for f in files:
 		if f == ".DS_Store" : continue
 		fileHandle = open (os.path.join(root,f))

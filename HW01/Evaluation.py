@@ -1,4 +1,4 @@
-fileHandler = open("s2FeatureVector.txt");
+fileHandler = open("s5FeatureVector.txt");
 vectors = []
 for lines in fileHandler.readlines():
 	signal = int(lines[0:lines.find("{")])
@@ -14,6 +14,7 @@ tp = 0 #true positive
 fp = 0 #false positive
 fn = 0 #false negative
 tn = 0 #true negative
+
 for signal, vector in vectors:
 	p = 0
 	for feature in vector:
@@ -23,9 +24,9 @@ for signal, vector in vectors:
 	elif (signal < 0 and p > 0): 
 		fp += 1.0
 	elif (signal < 0 and p < 0): 
-		fn += 1.0
-	else: 
 		tn += 1.0
+	else: 
+		fn += 1.0
 
 precision = tp / (tp + fp)
 recall = tp / (tp + fn)
