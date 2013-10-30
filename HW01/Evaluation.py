@@ -1,4 +1,4 @@
-fileHandler = open("s5FeatureVector.txt");
+fileHandler = open("s1FeatureVector.txt");
 vectors = []
 for lines in fileHandler.readlines():
 	signal = int(lines[0:lines.find("{")])

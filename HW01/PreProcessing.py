@@ -5,18 +5,20 @@ import os
 
 table = tfidf.Tfidf()
 
-positive = 5
+positive = 1
 negative = -1
 
 #import files
 datano = "1"
 path = "data 1/s%s/" %datano
-multifile = "training data/"
+multifile = "data 1/"
+evaluationDataNum = 1
 demopath = 'demodata/'
 
-for root, dirs, files in os.walk(path):
+for root, dirs, files in os.walk(multifile):
 	for f in files:
 		if f == ".DS_Store" : continue
+		if ("s%d" %evaluationDataNum) in root: continue
 		fileHandle = open (os.path.join(root,f))
 		if "baseball" in root:
 			table.addDocument(positive, f, fileHandle.read().split())
@@ -25,13 +27,8 @@ for root, dirs, files in os.walk(path):
 		fileHandle.close()
 
 doclist = table.getTfIdf()
-# dic= sorted(doclist[9][2].iteritems(), key=lambda d:d[1], reverse = True)
-# print dic
-# print len(dic)
-# print len(table.getCorpusDict())
-# print doclist[0][2]
 
-fileHandle = open ("s%sFeatureVector.txt" %datano, 'w')
+fileHandle = open ("FVWithoutNo.%d.txt" %evaluationDataNum, 'w')
 for doc in doclist:
 	data = "%d" %doc[0] + " " +str(doc[2]) +"\n"
 	fileHandle.write(data)
