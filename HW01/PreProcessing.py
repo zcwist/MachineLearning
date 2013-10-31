@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*- 
-import tfidf
+import Tfidf
 import os
 
 
-table = tfidf.Tfidf()
+table = Tfidf.Tfidf()
 
 positive = 1
 negative = -1
@@ -11,11 +11,11 @@ negative = -1
 #import files
 datano = "1"
 path = "data 1/s%s/" %datano
-multifile = "data 1/"
+multiFile = "data 1/"
 evaluationDataNum = 1
 demopath = 'demodata/'
 
-for root, dirs, files in os.walk(multifile):
+for root, dirs, files in os.walk(multiFile):
 	for f in files:
 		if f == ".DS_Store" : continue
 		if ("s%d" %evaluationDataNum) in root: continue
@@ -28,7 +28,7 @@ for root, dirs, files in os.walk(multifile):
 
 doclist = table.getTfIdf()
 
-fileHandle = open ("FVWithoutNo.%d.txt" %evaluationDataNum, 'w')
+fileHandle = open ("midData/FVWithoutNo.%d.txt" %evaluationDataNum, 'w')
 for doc in doclist:
 	data = "%d" %doc[0] + " " +str(doc[2]) +"\n"
 	fileHandle.write(data)
