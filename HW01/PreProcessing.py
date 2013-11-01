@@ -29,6 +29,7 @@ for root, dirs, files in os.walk(multiFile):
 doclist = table.getTfIdf()
 
 fileHandle = open ("midData/FVWithoutNo.%d.txt" %evaluationDataNum, 'w')
+#fileHandle = open ("midData/s%sFeatureVector.txt" %datano, 'w')
 for doc in doclist:
 	data = "%d" %doc[0] + " " +str(doc[2]) +"\n"
 	fileHandle.write(data)
