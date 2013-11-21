@@ -1,0 +1,456 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getTfIdf  (function)"
+			],
+			[
+				"count",
+				"countTfIdf"
+			],
+			[
+				"tfIdf",
+				"tfIdfDict"
+			],
+			[
+				"lo",
+				"log10  (function)"
+			],
+			[
+				"co",
+				"corpusDict  (variable)"
+			],
+			[
+				"fil",
+				"fileHandle"
+			],
+			[
+				"qe",
+				"query_dict"
+			],
+			[
+				"query",
+				"query_dict"
+			],
+			[
+				"list",
+				"list_of_words"
+			],
+			[
+				"do",
+				"doc_name"
+			],
+			[
+				"doc",
+				"doc_dict"
+			],
+			[
+				"c",
+				"corpus_dict"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "untitled.sublime-project",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"git:cm",
+				"Git: Commit"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"pre",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"prev",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"previ",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git:pu",
+				"Git: Pull"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"git:st",
+				"Git: Status"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Add..."
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"git:ad",
+				"Git: Add..."
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"sib",
+				"View: Toggle Side Bar"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 305.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/README.md",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/PreProcessing.py",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/Learning.py",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/demo.py",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/Evaluation.py",
+		"/Users/kiwi/Desktop/rubydemo.rb",
+		"/Users/kiwi/Desktop/pythondemo.py",
+		"/Users/kiwi/Documents/Workspace/samplecode/Bluetooth Demo/Bluetooth send/Classes/BluetoothViewController.m",
+		"/Users/kiwi/Documents/Workspace/samplecode/Bluetooth Demo/Bluetooth Receiver/Classes/BluetoothViewController.h",
+		"/Users/kiwi/Documents/Workspace/samplecode/Bluetooth Demo/Bluetooth Receiver/Classes/BluetoothViewController.m",
+		"/Users/kiwi/Documents/private project/广告灯/web-api/php/index.php",
+		"/Users/kiwi/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/kiwi/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/kiwi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/kiwi/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/tf.py",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/dictionary for baseball of s1",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/tfidf.py",
+		"/Users/kiwi/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/training.py",
+		"/Users/kiwi/Documents/Workspace/pydemo/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fileHandler",
+			"doc_dict",
+			"0",
+			"receive",
+			"getCorpusDict",
+			"query_dict",
+			"corpus_dict",
+			"list_of_words",
+			"doc_dict",
+			"doc_name",
+			"number",
+			"('\n",
+			"table",
+			"doc_name",
+			"doct",
+			"doct+doc"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "untitled.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 290.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"project": "plsi.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"README.md"
+			],
+			[
+				"ma",
+				"main.py"
+			],
+			[
+				"eva",
+				"Evaluation.py"
+			],
+			[
+				"lear",
+				"Learning.py"
+			],
+			[
+				"lea",
+				"Learning.py"
+			],
+			[
+				"tf",
+				"tf.py"
+			],
+			[
+				"d",
+				"demo.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
