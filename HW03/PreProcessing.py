@@ -5,7 +5,7 @@ docNum = fileHandle.readline()
 
 wordList = []
 
-featureFile = open("Feature.text","w")
+featureFile = open("Feature.txt","w")
 
 
 for doc in fileHandle.readlines():
@@ -15,5 +15,11 @@ for doc in fileHandle.readlines():
 			wordList.append(word)
 		index = wordList.index(word) + 1
 		feature[index] = feature.get(index, 0) + 1
-	print feature
 	featureFile.write(str(feature)+"\n")
+
+fileHandle.close()
+featureFile.close()
+
+corpus = open ("Corpus.txt","w")
+corpus.write(str(wordList))
+corpus.close()

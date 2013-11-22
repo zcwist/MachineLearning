@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"readln",
+				"readlines  (function)"
+			],
+			[
 				"get",
 				"getTfIdf  (function)"
 			],
@@ -56,10 +60,10 @@
 	"buffers":
 	[
 		{
-			"file": "untitled.sublime-project",
+			"file": "Feature.text",
 			"settings":
 			{
-				"buffer_size": 126,
+				"buffer_size": 502618,
 				"line_ending": "Unix"
 			}
 		}
@@ -67,9 +71,37 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 107.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:add",
+				"Git: Add..."
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
 			[
 				"remove",
 				"Package Control: Remove Package"
@@ -115,10 +147,6 @@
 				"Git: Push"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
 				"com",
 				"Git: Commit"
 			],
@@ -129,14 +157,6 @@
 			[
 				"pull",
 				"Git: Pull"
-			],
-			[
-				"comm",
-				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"git:pu",
@@ -151,10 +171,6 @@
 				"Set Syntax: Ruby"
 			],
 			[
-				"side",
-				"View: Toggle Side Bar"
-			],
-			[
 				"git:co",
 				"Git: Commit"
 			],
@@ -167,20 +183,8 @@
 				"Git: Commit"
 			],
 			[
-				"git:add",
-				"Git: Add..."
-			],
-			[
-				"git:sta",
-				"Git: Status"
-			],
-			[
 				"commit",
 				"Git: Commit"
-			],
-			[
-				"stat",
-				"Git: Status"
 			],
 			[
 				"git:ad",
@@ -215,7 +219,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 305.0
+		"width": 425.0
 	},
 	"console":
 	{
@@ -236,6 +240,9 @@
 	},
 	"file_history":
 	[
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW03/PreProcessing.py",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW03/data.txt",
+		"/Users/kiwi/Documents/code/python/MachineLearning/HW03/dataDemo.txt",
 		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/README.md",
 		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/PreProcessing.py",
 		"/Users/kiwi/Documents/code/python/MachineLearning/HW01/Learning.py",
@@ -274,6 +281,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"the",
+			"of",
 			"fileHandler",
 			"doc_dict",
 			"0",
@@ -312,27 +321,131 @@
 			[
 				{
 					"buffer": 0,
-					"file": "untitled.sublime-project",
-					"semi_transient": true,
+					"file": "Feature.text",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 502618,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								43,
+								43
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"sublime_auto_complete": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 190134.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -386,7 +499,7 @@
 	"project": "plsi.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -395,8 +508,12 @@
 		"selected_items":
 		[
 			[
+				"data",
+				"data.txt"
+			],
+			[
 				"",
-				"README.md"
+				"Feature.text"
 			],
 			[
 				"ma",
@@ -447,7 +564,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
