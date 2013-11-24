@@ -25,7 +25,8 @@ class Plsa:
 		for doc in self.docs:
 			d = self.docs.index(doc)
 			for word in doc:
-					self.z_dw[(d,word)] = randNormVector(self.topics)
+				for i in range(topics):
+					self.z_dw[(d,word)] = random.random
 					self.sumOfNdw += doc[word]
 		self.mStep()
 
@@ -37,15 +38,15 @@ class Plsa:
 				for i in range(self.topics):
 					sum += self.w_z[word][i] * self.d_z[d][i] * self.z[i]
 				for i in range(self.topics):
-					self.z_dw = self.w_z[word][i] * self.d_z[d][i] * self.z[i] / sum
+					self.z_dw[(d,word)][i] = self.w_z[word][i] * self.d_z[d][i] * self.z[i] / sum
 
 	def mStep(self):
 		for i in range(self.topics):
 			sumOfNdwPzdwForDW = 0 #sum(n(d,w)*P(z|d,w)) d in D, w in W
 			for doc in self.docs:
-				d = doc.index(doc)
+				d = self.docs.index(doc)
 				for word in doc:
-					sumOfNdwPzdwForDW += doc[word] * self.z_dw[i]
+					sumOfNdwPzdwForDW += doc[word] * self.z_dw[(d,word)][i]
 			
 			#calc p(w|z)
 			sumOfNdwPzdwForD = 0 #sum(n(d,w)*P(z|d,w)) d in D
