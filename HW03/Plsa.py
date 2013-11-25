@@ -2,15 +2,6 @@
 import random
 import math
 
-
-def randNormVector(size):
-	vec = []
-	for _ in range(size):
-		vec.append(random.random())
-	norm = sum(vec)
-	for i in range(size):
-		vec[i] /= norm
-
 class Plsa:
 	def __init__(self, docs, corpus, topics):
 		self.docs = docs
@@ -22,6 +13,8 @@ class Plsa:
 		self.w_z = [{} for row in range(topics)]
 		self.d_z = [[0 for col in range(topics)] for row in range(len(docs))]
 		self.z = [0] * topics
+
+		self.makeIndex()
 		
 		#first e-step
 		self.sumOfNdw = 0 # sum(n(d,w)) d in D, w in W
@@ -36,6 +29,14 @@ class Plsa:
 				for i in range(topics):
 					self.z_dw[(d,word)][i] /= norm
 		self.mStep()
+
+	def makeIndex(self):
+		self.wordIndex = []
+		for w in range(self.wordNum):
+			self.wordIndex.append([])
+			for doc in self.docs:
+				if w in doc:
+					self.wordIndex[w].append(self.docs.index(doc))
 
 
 	def eStep(self):
@@ -59,14 +60,9 @@ class Plsa:
 			#calc p(w|z)
 			for w in range(self.wordNum):
 				sumOfNdwPzdwForD = 0 #sum(n(d,w)*P(z|d,w)) d in D
-				for doc in self.docs:
-					d = self.docs.index(doc)
-					if w in doc.keys():
-						sumOfNdwPzdwForD += doc[w] * self.z_dw[(d, w)][i]
+				for d in self.wordIndex[w]:
+					sumOfNdwPzdwForD += self.docs[d][w] * self.z_dw[(d, w)][i]
 				self.w_z[i][w] = sumOfNdwPzdwForD / sumOfNdwPzdwForDW
-			# print i
-			# print self.w_z[i]
-
 
 			#calc p(d|z)
 			for doc in self.docs:

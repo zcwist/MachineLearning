@@ -23,9 +23,7 @@ startTime = now
 
 plsa = Plsa.Plsa(docs, corpus, k)
 plsa.train(10)
-#plsa.printW_z()
+plsa.printW_z()
 
 now = time.clock()
 print "spent %f on algorithm" % (now - startTime)
-
-

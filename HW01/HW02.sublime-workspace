@@ -1,0 +1,470 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Lea",
+				"Learning"
+			],
+			[
+				"f1",
+				"f1score"
+			],
+			[
+				"da",
+				"datanum"
+			],
+			[
+				"ite",
+				"itertimes"
+			],
+			[
+				"vec",
+				"vector"
+			],
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"tfi",
+				"tfIdfDict"
+			],
+			[
+				"tfI",
+				"tfIdfDict"
+			],
+			[
+				"corp",
+				"corpus_dict"
+			],
+			[
+				"co",
+				"corpus_dict"
+			],
+			[
+				"doc_",
+				"doc_dict"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"nor",
+				"normalizing"
+			],
+			[
+				"que",
+				"query_dict"
+			],
+			[
+				"list",
+				"list_of_words"
+			],
+			[
+				"doc",
+				"doc_dict"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"sys",
+				"systype"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW02/demo.py",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix",
+				"name": "from flask import Flask"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"selected_items":
+		[
+			[
+				"che",
+				"Git: Checkout Current File"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"mark",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"preview",
+				"Strapdown.js Markdown: Preview in a browser"
+			],
+			[
+				"git:p",
+				"Git: Pull"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"git:pu",
+				"Git: Push"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Add..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git:ad",
+				"Git: Add..."
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"git:sta",
+				"Git: Status"
+			],
+			[
+				"git:pus",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"git:s",
+				"Git: Status"
+			],
+			[
+				"pro",
+				"Project: Close"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"gitst",
+				"Git: Status"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			" import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/PreProcessing.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/Tfidf.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/main.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/Evaluation.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/Learning.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/midData/s1FeatureVector.txt",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/README.md",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/result.md",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/s1FeatureVector.txt",
+		"/home/kiwi/.config/sublime-text-3/Packages/Git/Git.sublime-settings",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/tfidf.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/Train.py",
+		"/home/kiwi/.config/sublime-text-3/Packages/User/Git.sublime-settings",
+		"/home/kiwi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/.git/config",
+		"/home/kiwi/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/usr/share/applications/sublime_text.desktop",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/data 2/s1",
+		"/home/kiwi/Workspaces/pydemo/numerical.py",
+		"/home/kiwi/Workspaces/pydemo/pydemo.sublime-project",
+		"/home/kiwi/.config/sublime-text-3/Packages/SideBarEnhancements/CHANGELOG",
+		"/home/kiwi/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/kiwi/Workspaces/pydemo/HelloWorld.py",
+		"/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW01/training.py",
+		"/home/kiwi/Documents/course/machine learning/HW1/HW01 - Perceptron Implementation - v0.3/data 1/s1/baseball/98657",
+		"/home/kiwi/Documents/course/machine learning/HW1/HW01 - Perceptron Implementation - v0.3/data 2/s1",
+		"/home/kiwi/Documents/course/machine learning/HW1/HW01 - Perceptron Implementation - v0.3/data 1/s2/baseball/104352"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"-1",
+			"{",
+			"ret",
+			"print",
+			"pay",
+			"Sat",
+			"list_of_words",
+			"corpus_dict = {}\n	def addDocument (self, doc_name, list_of_words):\n		#building a ",
+			"corpus",
+			"oc dict[w] = doc dict.get(w,0.) + 1.0\n			self.corpus_dict[w] = self.corpus_dict.get(w,0.0) + 1.0\n\n		#normalizing the dictionary\n		length = float(len(list_of_words))\n		for k in doc_dict:\n			doc_dict[k] = doc_dict[k] / length\n\n		#add the normalized document to the corpus\n",
+			"worlds",
+			"path = '' \nf = open(path)\nd = "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"words"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/kiwi/Documents/course/machine learning/HWcode/MachineLearning/HW02/demo.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"auto_name": "from flask import Flask",
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 235.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"project": "HW02.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"fe",
+				"s1FeatureVector.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

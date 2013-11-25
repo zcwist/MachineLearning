@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/kiwi/Documents/code/HWcode/MachineLearning/HW02"
+		}
+	],
+	"build_systems":
+	[
+	    {
+	    "name": "Run Tests",
+	    "working_dir": "/home/kiwi/Documents/code/HWcode/MachineLearning/HW02",
+	    "cmd": ["/home/kiwi/Documents/code/HWcode/MachineLearning/HW02/venv/bin/python.exe", "manage.py", "test"]
+	    }
+	]
+}
