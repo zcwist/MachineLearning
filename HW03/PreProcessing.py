@@ -1,6 +1,6 @@
 import os
 
-fileHandle = open("data.txt")
+fileHandle = open("dataDemo.txt")
 docNum = fileHandle.readline()
 
 wordList = []
@@ -13,7 +13,7 @@ for doc in fileHandle.readlines():
 	for word in doc.split():
 		if word not in wordList:
 			wordList.append(word)
-		index = wordList.index(word) + 1
+		index = wordList.index(word)
 		feature[index] = feature.get(index, 0) + 1
 	featureFile.write(str(feature)+"\n")
 

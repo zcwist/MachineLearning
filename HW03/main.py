@@ -1,8 +1,10 @@
 import Plsa
 
+import time
 
+startTime = time.clock()
 
-k = 1
+k = 5
 
 docs = []
 fileHandle = open("Feature.txt")
@@ -15,8 +17,15 @@ fileHandle = open("Corpus.txt")
 corpus = eval(fileHandle.read())
 fileHandle.close()
 
-wordNum = len(corpus)
+now = time.clock()
+print "spent %f on import" % (now - startTime)
+startTime = now
 
-plsa = Plsa.Plsa(docs, wordNum, k)
-plsa.eStep()
+plsa = Plsa.Plsa(docs, corpus, k)
+plsa.train(10)
+#plsa.printW_z()
+
+now = time.clock()
+print "spent %f on algorithm" % (now - startTime)
+
 
