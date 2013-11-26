@@ -1,4 +1,4 @@
-import Plsa
+import MPlsa
 
 import time
 
@@ -21,7 +21,7 @@ now = time.clock()
 print "spent %f on import" % (now - startTime)
 startTime = now
 
-plsa = Plsa.Plsa(docs, corpus, k)
+plsa = MPlsa.Plsa(docs, corpus, k)
 plsa.train(10)
 plsa.printW_z()
 
