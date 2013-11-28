@@ -4,7 +4,7 @@ import time
 
 startTime = time.clock()
 
-k = 5
+k = 12
 
 docs = []
 fileHandle = open("Feature.txt")
@@ -17,13 +17,15 @@ fileHandle = open("Corpus.txt")
 corpus = eval(fileHandle.read())
 fileHandle.close()
 
-now = time.clock()
-print "spent %f on import" % (now - startTime)
-startTime = now
+# now = time.clock()
+# print "spent %fs on import" % (now - startTime)
+# startTime = now
 
-plsa = MPlsa.Plsa(docs, corpus, k)
-plsa.train(10)
-plsa.printW_z()
+for k in range(5):
+	plsa = MPlsa.Plsa(docs, corpus, k+22)
+	plsa.train(10)
+	print "when topics = %d" %(k + 2)
+# plsa.printW_z()
 
-now = time.clock()
-print "spent %f on algorithm" % (now - startTime)
+# now = time.clock()
+# print "spent %fs on algorithm" % (now - startTime)
