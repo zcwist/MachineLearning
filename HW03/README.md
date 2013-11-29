@@ -26,7 +26,7 @@ topics:主题数
 
 -mStep(): EM算法的M-STEP
 
--train(): 训练。两次迭代Likelihood相对误差小于1e-4时，视为收敛。
+-train(): 训练。两次迭代Likelihood**相对误差小于1e-4**时，视为收敛。
 
 ###2.PreProcessing.py
 
@@ -36,55 +36,213 @@ topics:主题数
 
 调用中间文间，运行PLSA算法，输出结果。
 
+##操作步骤
+
+###1.预处理
+
+	运行PreProcessing.py 进行前处理。可以通过改变topX，改变预处理的行数，大于总行数，则处理所以行。
+
+###2.训练并输出
+	
+	改变分类数topics，运行main.py 进行训练，并输出分类结果。
+
 ##算法结果
-Likelihood = -456024.296419 when topics = 2
 
-Likelihood = -463233.650388 when topics = 3
+分别以分类数为2、3、5为例
 
-Likelihood = -468130.593923 when topics = 4
+###topics = 2
 
-Likelihood = -471398.605316 when topics = 5
+	spent 0.151679s on importing file
+	iter times = 22
+	likelihood = -454551.971408
+	-------------------------
+	topic 0:
+	web:0.024722
+	semantic:0.014825
+	data:0.012913
+	information:0.011012
+	support:0.010910
+	knowledge:0.009691
+	learning:0.008851
+	approach:0.008739
+	vector:0.007845
+	classification:0.007484
+	-------------------------
+	-------------------------
+	topic 1:
+	learning:0.033945
+	systems:0.011182
+	planning:0.010127
+	logic:0.007961
+	information:0.007730
+	reasoning:0.007477
+	model:0.007213
+	agents:0.007199
+	knowledge:0.007056
+	data:0.006972
+	-------------------------
+	spent 10.435883s on algorithm
+	[Finished in 10.7s]
 
-Likelihood = -474394.409650 when topics = 6
+分类解释：
 
-Likelihood = -476905.849248 when topics = 7
+-topic 0:语义网
 
-Likelihood = -479083.955735 when topics = 8
+-topic 1:机器学习
 
-Likelihood = -480845.583321 when topics = 9
+###topics = 3
 
-Likelihood = -481568.807240 when topics = 10
+	spent 0.140538s on importing file
+	iter times = 28
+	likelihood = -460331.539582
+	-------------------------
+	topic 0:
+	learning:0.031034
+	support:0.016292
+	systems:0.013215
+	classification:0.011959
+	vector:0.011954
+	networks:0.011668
+	data:0.009361
+	bayesian:0.009346
+	multi-agent:0.009153
+	approach:0.008402
+	-------------------------
+	-------------------------
+	topic 1:
+	learning:0.030496
+	data:0.013964
+	planning:0.012966
+	search:0.011529
+	information:0.011069
+	selection:0.010855
+	web:0.010801
+	feature:0.009650
+	decision:0.008272
+	based:0.007440
+	-------------------------
+	-------------------------
+	topic 2:
+	web:0.030849
+	knowledge:0.023412
+	semantic:0.020417
+	reasoning:0.014108
+	logic:0.011368
+	information:0.010255
+	ontology:0.009541
+	approach:0.008848
+	extraction:0.008796
+	programming:0.008621
+	-------------------------
+	spent 14.539366s on algorithm
+	[Finished in 14.7s]
 
-Likelihood = -483081.719609 when topics = 11
+分类解释：
 
-Likelihood = -484087.188684 when topics = 12
- 
-Likelihood = -483933.304251 when topics = 12
+-topic 0:学习系统
 
-Likelihood = -485505.698568 when topics = 13
+-topic 1:信息获取
 
-Likelihood = -486112.447189 when topics = 14
+-topic 2:语义网
 
-Likelihood = -486926.796773 when topics = 15
+###topics = 5
 
-Likelihood = -487488.446365 when topics = 16
+	spent 0.144273s on importing file
+	iter times = 32
+	likelihood = -467529.845755
+	-------------------------
+	topic 0:
+	web:0.042768
+	semantic:0.020797
+	ontology:0.016438
+	systems:0.016348
+	knowledge:0.015674
+	agent:0.014912
+	analysis:0.013815
+	ontologies:0.012599
+	applications:0.012427
+	model:0.011521
+	-------------------------
+	-------------------------
+	topic 1:
+	learning:0.020900
+	text:0.019279
+	agents:0.015186
+	networks:0.014300
+	planning:0.012251
+	classification:0.012191
+	intelligent:0.010968
+	environments:0.010441
+	mobile:0.010264
+	bayesian:0.009939
+	-------------------------
+	-------------------------
+	topic 2:
+	learning:0.036866
+	support:0.028806
+	logic:0.021087
+	vector:0.020710
+	language:0.020522
+	programming:0.016003
+	machine:0.015813
+	user:0.013175
+	modeling:0.012614
+	machines:0.012238
+	-------------------------
+	-------------------------
+	topic 3:
+	learning:0.029182
+	data:0.028981
+	web:0.026687
+	selection:0.018392
+	extraction:0.017149
+	information:0.016766
+	classification:0.014099
+	feature:0.014081
+	mining:0.013805
+	search:0.012353
+	-------------------------
+	-------------------------
+	topic 4:
+	planning:0.024653
+	learning:0.020392
+	approach:0.020011
+	systems:0.019629
+	knowledge:0.018474
+	multi-agent:0.015807
+	system:0.014063
+	data:0.012685
+	reasoning:0.012611
+	information:0.011110
+	-------------------------
+	spent 21.982122s on algorithm
+	[Finished in 22.2s]
 
-Likelihood = -488413.807935 when topics = 17
+随着分类数目的增多，对分类进行解释变得更加复杂，对这个领域不是太了解，就不能再做细分了。所以最大的分类数选择了5，在调试阶段也尝试过30类以上的分类操作。
 
-Likelihood = -489091.446733 when topics = 18
+##特色
 
-Likelihood = -489842.893020 when topics = 19
+-倒排索引
 
-Likelihood = -490048.383656 when topics = 20
+-list嵌套dictionary，存储稀疏矩阵
 
-Likelihood = -490805.864386 when topics = 21
+-尽可能用list，提高处理效率
 
-Likelihood = -491580.432400 when topics = 22
+##一些体会
 
-Likelihood = -491974.951833 when topics = 23
+以前以为空洞的概念论，现在发挥了大作用。不算特别复杂的公式推导，就能实现这样看起来复杂的功能。
 
-Likelihood = -492814.541796 when topics = 24
+算法的实现，倒不是很麻烦，但是优化就显得很难。
 
-Likelihood = -492937.930725 when topics = 25
+但是在一开始，仅选择100条记录作为sample，分5类，迭代9次，就花了6.8s，跑真实数据的10000多条数据的时候，我直接以为死机了。
 
-Likelihood = -493039.603267 when topics = 26
+后来增加了**倒排索引**的结构，在外层遍历词表的时候，内层不遍历所有文档，而只遍历包含该词的文档，这样一来，文档-词索引，词-文档索引来存储大型的稀疏矩阵，大大提高了效率。此时处理1000组数据，分5类，用时3.9s，但是在处理所有数据的时候，还是耗时433.16s。而这只是进行一种分类方式，这样的时间还是不可接受的。
+
+下面我又进行了优化，可能是python内部的机制决定，对于dictionary的检索速度还是慢。我尽可能地使用list数据结构，又大幅度地减少了时间，对所有文档分5类，耗时22.2s。这样的速度就比较能接受了。
+
+越是想缩短时间，就越是觉得自己基础知识的薄弱，但是不断优化的过程，优化的是程序，提高的是自己的能力。外系生做这个作业，难度是有的，但收获是更大的。
+
+最后，感谢助教不厌其烦的耐心解答。
+
+##
+

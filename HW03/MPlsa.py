@@ -97,7 +97,7 @@ class Plsa:
 			if cur != 0 and abs((self.likelihood-cur)/cur) < 1e-4:
 				break
 			cur = self.likelihood
-		# print "iter = %d" % i
+		print "iter times = %d" % i
 		print "likelihood = %f" % self.likelihood
 	
 	def printW_z(self, topMax = 10):
